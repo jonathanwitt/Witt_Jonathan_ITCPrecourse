@@ -1,3 +1,7 @@
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -5,40 +9,33 @@
     <link href="./style.css" rel="stylesheet" />
   </head>
   <body>
-    <section>
+  
       <div class="page-wrapper">
       <nav>
         <!-- fixed at the Top + always 100% of width-->
-        <!-- CREATE LINKS-->
-       <a href="#">HOME</a>
-       <a href="#">ABOUT</a>
-       <a href="#">CONTACT</a>
+       
+       <a class="nav" href="index.html">HOME</a>
+       <a class="nav" href="about.html">ABOUT</a>
+       <a class="nav" href="contact.html">CONTACT</a>
       </nav>
         <div class="card">
-          <img
-            id="profile-image"
-            src="code.png"
-            alt="Israel Tech Challenge"
-            class="profile-image"
-          />
+       
           <div>
             <h1 id="my-name">
-              Jonathan Witt
+              Jonathan Witt 
             </h1>
             <h4>ITC Fullstack Development</h4>
           </div>
           <div>
-            <!-- Links to Github/Stackoverflow/LinkedIn - use fontawesome.com-->
-            <!-- CREATE LINKS-->
             <ul>
-              <a href="#">Github-Img</a>
-              <a href="#">LinkedIn-Img</a>
-              <a href="#">Stackoverfolw-Img</a>
+              <a href="https://github.com/" target="_blank"><img class="git" src="img/github.png"></a>
+              <a href="https://www.linkedin.com/in/jonathan-witt-757b551b7/" target="_blank"><img class="in" src="img/in.png"></a>
+              <a href="https://stackoverflow.com/users/story/17890851" target="_blank"><img class="stack" src="img/stackoverflow.jpg"></a>
             </ul>
           </div>
         </div>
       </div>
-      <div>&#169; Israel Tech Challenge</div>
+  
     </section>
     <script src="itcprecourse.js"></script>
   </body>

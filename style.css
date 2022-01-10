@@ -1,14 +1,14 @@
-* {
-  box-sizing: border-box;
-}
 
 body {
-  background-image: linear-gradient(to bottom right, lightgray, white);
-  font-family: sans-serif;
+  background-color: #1BBAE6;  
+  font-family: 'Josefin Sans', sans-serif;
   font-size: 16px;
   height: 100vh;
   margin: 0;
   padding: 0;
+  border: solid red 2px;
+}
+ 
 }
 
 .button {
@@ -24,19 +24,6 @@ body {
   width: 120px;
 }
 
-.card {
-  align-items: center;
-  background-image: linear-gradient(to bottom right, white, lightgray);
-  border-radius: 10px;
-  -webkit-box-shadow: 4px 4px 40px 0px rgba(0, 0, 0, 1);
-  -moz-box-shadow: 4px 4px 40px 0px rgba(0, 0, 0, 1);
-  box-shadow: 4px 4px 40px 0px rgba(0, 0, 0, 1);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin: 50px;
-  padding: 50px;
-}
 
 .nav-item {
   align-self: flex-end;
@@ -47,10 +34,15 @@ body {
 }
 
 .page-wrapper {
+  background-color: white;
   align-items: center;
   flex-direction: column;
   display: flex;
   justify-content: center;
+  border: #0711E6 solid 30px;
+  width: 1200px;
+  margin: 4rem auto;
+  
 }
 
 .profile-image {
@@ -61,4 +53,36 @@ body {
   height: 180px;
   margin: 50px;
   width: 180px;
+}
+.git, .stack{
+  width: 2rem;
+  height: 2rem;
+  border: solid green px;
+  margin-bottom: 0.6rem;
+}
+.in{
+  width: 3rem;
+  height: 3rem;
+  margin-top: 12rem;
+  border: red solid px; 
+}
+nav{
+  border: springgreen solid px;
+  margin-top: 4rem;
+  display: block;
+
+}
+.nav{
+  color: #1BBAE6;
+  border: red solid px;
+  font-size: 22px;
+  text-decoration: none;
+  margin: 0 1rem;
+  padding: 1rem;
+
+}
+a.nav:hover{
+  color: white;
+  background-color: #0711E6;
+  
 }
