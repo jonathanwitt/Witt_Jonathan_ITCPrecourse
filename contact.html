@@ -9,42 +9,50 @@
     <link href="./style.css" rel="stylesheet" />
   </head>
   <body>
-  
-      <div class="page-wrapper">
-      <nav>
-        <!-- fixed at the Top + always 100% of width-->
-       
-       <a class="nav" href="index.html">HOME</a>
-       <a class="nav" href="about.html">ABOUT</a>
-       <a class="nav" href="contact.html">CONTACT</a>
-      </nav>
+    <header>
+      <nav id="navbar">
+     <ul>
+     <li><a class="nav" href="index.html">HOME</a></li>
+     <li><a class="nav" href="info.html">ABOUT</a></li>
+     <li><a class="nav" href="contact.html">CONTACT</a></li>
+    </ul>
+    </nav>
+  </header>
+  <section class="banner">
 
-      <form action="">
+  <div class="form-container">
 
-        <legend>Your contact information</legend>
+      <div class="formalignment">
+      <form action="" id="InfoForm">
 
+        <legend>Your contact information!</legend>
+        <p></p>
 
-        <label for="name">First Name</label>
+        <label for="name">First Name:</label>
+        <input type="text" id="name" name="name" required>
+        <p></p>
 
-        <input type="text" id="name" name="name" autofocus>
-
-
-        <label for="lastname">Last Name</label>
-
+        <label for="lastname">Last Name:</label>
         <input type="text" id="lastname" name="lastname" autofocus>
+        <p></p>
 
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <p></p>
 
-        <label for="email">Email</label>
-    
-        <input type="email" id="email" name="email">
-
-
-        <label for="comments">Additional Information</label>
-
-        <textarea id="comments" name="comments"></textarea>
+        <label for="comments">Additional Information:</label>
+        <textarea id="comments" name="comments" required></textarea>
+        <p></p>
+        
+        <button onclick="popUp()" type="button" class="button" disabled="disabled">SUBMIT</button>
     </form>
-     
-          <div>
+      </div>
+      <div id='output'></div>
+  </div>
+
+  
+
+          <div class="footer">
             <ul>
               <a href="https://github.com/" target="_blank"><img class="git" src="img/github.png"></a>
               <a href="https://www.linkedin.com/in/jonathan-witt-757b551b7/" target="_blank"><img class="in" src="img/in.png"></a>
@@ -53,23 +61,7 @@
           </div>
         
       </div>
-  
     </section>
     <script src="itcprecourse.js"></script>
   </body>
-</html>
-
-    <!-- All fields except the "last name" field should be required.
--->
-
-<!-- Add a submit button to your form. When the submit button is clicked, the browser's console should neatly display
-the details entered into the form in the following format: First Name : ___, Last Name: ____, Email: ____, Comment:
-____, Your Input: ____. Replace "Your Input" with a name corresponding to what you actually choose to implement.
--->
-
-<!-- The submit button should not be functional and should look disabled as long as the required fields are not filled in
--->
-
-
-</body>
 </html>
