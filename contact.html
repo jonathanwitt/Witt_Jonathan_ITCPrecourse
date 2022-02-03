@@ -1,6 +1,9 @@
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link
+  href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap"
+  rel="stylesheet"
+/>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -11,55 +14,70 @@
   <body>
     <header>
       <nav id="navbar">
-     <ul>
-     <li><a class="nav" href="index.html">HOME</a></li>
-     <li><a class="nav" href="info.html">ABOUT</a></li>
-     <li><a class="nav" href="contact.html">CONTACT</a></li>
-    </ul>
-    </nav>
-  </header>
-  <section class="banner">
+        <ul>
+          <li><a class="nav" href="index.html">HOME</a></li>
+          <li><a class="nav" href="info.html">ABOUT</a></li>
+          <li><a class="nav" href="contact.html">CONTACT</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section class="banner">
+      <div class="form-container">
+        <div class="formalignment">
+          <form action="" id="InfoForm">
+            <legend>Your contact information!</legend>
+            <p></p>
 
-  <div class="form-container">
+            <label for="name">First Name:</label>
+            <input type="text" id="name" name="name" required />
+            <p></p>
 
-      <div class="formalignment">
-      <form action="" id="InfoForm">
+            <label for="lastname">Last Name:</label>
+            <input type="text" id="lastname" name="lastname" autofocus />
+            <p></p>
 
-        <legend>Your contact information!</legend>
-        <p></p>
+            <label for="email"
+              >Email: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label
+            >
+            <input type="email" id="email" name="email" required />
+            <p></p>
 
-        <label for="name">First Name:</label>
-        <input type="text" id="name" name="name" required>
-        <p></p>
+            <label for="comments">Additional Information:</label>
+            <textarea id="comments" name="comments" required></textarea>
+            <p></p>
 
-        <label for="lastname">Last Name:</label>
-        <input type="text" id="lastname" name="lastname" autofocus>
-        <p></p>
-
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required>
-        <p></p>
-
-        <label for="comments">Additional Information:</label>
-        <textarea id="comments" name="comments" required></textarea>
-        <p></p>
+            <button
+              onclick="popUp()"
+              type="button"
+              class="button"
+              disabled="disabled"
+            >
+              SUBMIT
+            </button>
+          </form>
+        </div>
+        <div id="output"></div>
         
-        <button onclick="popUp()" type="button" class="button" disabled="disabled">SUBMIT</button>
-    </form>
-      </div>
-      <div id='output'></div>
-  </div>
+        </div>
 
-  
-
-          <div class="footer">
-            <ul>
-              <a href="https://github.com/" target="_blank"><img class="git" src="img/github.png"></a>
-              <a href="https://www.linkedin.com/in/jonathan-witt-757b551b7/" target="_blank"><img class="in" src="img/in.png"></a>
-              <a href="https://stackoverflow.com/users/story/17890851" target="_blank"><img class="stack" src="img/stackoverflow.jpg"></a>
-            </ul>
-          </div>
-        
+        <div class="footer">
+          <ul>
+            <a href="https://github.com/" target="_blank"
+              ><img class="git" src="img/github.png"
+            /></a>
+            <a
+              href="https://www.linkedin.com/in/jonathan-witt-757b551b7/"
+              target="_blank"
+              ><img class="in" src="img/in.png"
+            /></a>
+            <a
+              href="https://stackoverflow.com/users/story/17890851"
+              target="_blank"
+              ><img class="stack" src="img/stackoverflow.jpg"
+            /></a>
+          </ul>
+        </div>
+        <div id="arrPrint"></div>
       </div>
     </section>
     <script src="itcprecourse.js"></script>
